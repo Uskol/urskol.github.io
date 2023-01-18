@@ -43,15 +43,14 @@ background-color: #1F5FBF;
 
 fetch('https://ipapi.co/json/')
   .then(function(response) {
+
+fetch('https://ipapi.co/json/')
+  .then(function(response) {
     return response.json();
   })
   .then(function(data) {
-    $("#IP").html(data.toString());
+    console.log(data);
   });
-
-
-
-</body>
 
 
 
