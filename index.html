@@ -34,13 +34,11 @@ background-color: #1F5FBF;
                load JSON-encoded data from the server using a
                GET HTTP request */
                 
-    $.getJSON("https://api.ipify.org?format=json", function(data) {
+ //   $.getJSON("https://api.ipify.org?format=json", function(data) {
          
-        // Setting text of element P with id gfg
-        $("#IP").html(data.ip);
-    })
-    </script>
+ </script>
 
+<script>
 
 fetch('https://ipapi.co/json/')
   .then(function(response) {
@@ -50,7 +48,7 @@ fetch('https://ipapi.co/json/')
     document.getElementById("IP").innerText = data
   });
 
-
+</script>
 
 
 </html>
