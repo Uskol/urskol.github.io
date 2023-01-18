@@ -45,7 +45,7 @@ fetch('https://ipapi.co/json/')
     return response.json();
   })
   .then(function(data) {
-    document.getElementById("IP").innerText = data.toString()
+    document.getElementById("IP").innerText = JSON.stringify(data)
   });
 
 </script>
